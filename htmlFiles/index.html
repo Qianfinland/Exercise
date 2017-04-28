@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<script type="text/javascript">
+    function login(username, password) {
+        if (username == "admin" && password == "1234") {
+            window.location = "main.html";
+        } else {
+            window.location = "error.html";
+        }
+    }
+</script>
+</head>
+<p>To login enter user name and password and click the login button.</p>
+<form name="login_form" onsubmit="login(this.username.value, this.password.value); return false;">
+User name:<br>
+<input type="text" name="username">
+<br>
+Password:<br>
+<input type="password" name="password">
+<br><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
